@@ -1,0 +1,12 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Dependency / build output (not used by this static site, but safe to ignore)
+node_modules/
+dist/
+.netlify/
+.vercel/
