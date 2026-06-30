@@ -19,7 +19,6 @@ Vercel, Cloudflare Pages, or GitHub Pages.
 ├── index.html        # Home
 ├── story.html        # Bobby's testimony (Valley to the Mountain)
 ├── show.html         # About the show + safety + FAQ
-├── huracan.html      # The Car — Huracán specs, gallery, listing link
 ├── episodes.html     # Watch — episode line-up (YouTube)
 ├── apply.html        # Guardian application + consent / media release
 ├── support.html      # The 12-month plan + non-profit vision
@@ -55,8 +54,7 @@ especially because the show involves minors:
    `[bracketed placeholder]` notes wherever you should confirm or adjust wording
    before publishing — especially the personal/family paragraphs.
 3. **Add your links.** Search the project for `add link` / `add channel link`
-   and drop in your YouTube, Instagram, donation, and Huracán **listing** URLs
-   (the listing link lives on `huracan.html`, marked `data-listing-link`).
+   and drop in your YouTube, Instagram, and donation URLs.
 4. **Connect the forms** so you actually receive applications & messages
    (instructions below).
 5. **Have an attorney review** the consent and media-release language on
