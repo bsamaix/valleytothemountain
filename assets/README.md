@@ -11,6 +11,7 @@ placeholder until each file exists).
 | `valley-road.jpg` | Home "Safety & trust" section | An Oregon valley road / scenery. |
 | `huracan-story.jpg` | Story page | You with the car, or a detail shot. |
 | `show-interior.jpg` | Show page | Interior / in-car perspective (no minors' faces unless released). |
+| `huracan-1.jpg` `huracan-2.jpg` `huracan-3.jpg` | The Car page gallery | Three favorite shots of the Huracán (different angles). |
 
 **Tips**
 - Use `.jpg` for photos (smaller files). Aim for under ~400 KB each; compress at

@@ -19,6 +19,8 @@ Vercel, Cloudflare Pages, or GitHub Pages.
 ├── index.html        # Home
 ├── story.html        # Bobby's testimony (Valley to the Mountain)
 ├── show.html         # About the show + safety + FAQ
+├── huracan.html      # The Car — Huracán specs, gallery, listing link
+├── episodes.html     # Watch — episode line-up (YouTube)
 ├── apply.html        # Guardian application + consent / media release
 ├── support.html      # The 12-month plan + non-profit vision
 ├── contact.html      # Contact form + details
@@ -53,7 +55,8 @@ especially because the show involves minors:
    `[bracketed placeholder]` notes wherever you should confirm or adjust wording
    before publishing — especially the personal/family paragraphs.
 3. **Add your links.** Search the project for `add link` / `add channel link`
-   and drop in your YouTube, Instagram, and donation URLs.
+   and drop in your YouTube, Instagram, donation, and Huracán **listing** URLs
+   (the listing link lives on `huracan.html`, marked `data-listing-link`).
 4. **Connect the forms** so you actually receive applications & messages
    (instructions below).
 5. **Have an attorney review** the consent and media-release language on
@@ -96,6 +99,24 @@ confirmation, but they do **not** send submissions anywhere yet. Pick one option
 > meets your privacy expectations, and tell families how their info is handled.
 
 ---
+
+## 🎬 Adding real episodes (episodes.html)
+
+Each episode is a `.card` on `episodes.html`. To feature a real video either:
+
+- **Link out:** wrap the card in `<a href="https://youtu.be/VIDEO_ID">…</a>` and
+  swap the thumbnail/title, or
+- **Embed it** with a responsive iframe:
+  ```html
+  <div style="position:relative;padding-top:56.25%;border-radius:10px;overflow:hidden;">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+      style="position:absolute;inset:0;width:100%;height:100%;border:0;"
+      title="Episode title" allowfullscreen loading="lazy"></iframe>
+  </div>
+  ```
+
+> Only publish an episode featuring a minor after the guardian has signed the
+> media release.
 
 ## 🚀 Deploying
 
