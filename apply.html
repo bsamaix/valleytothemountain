@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply for mentorship — Valley to the Mountain</title>
+  <meta name="description" content="Parents and guardians: apply for your young man to be a guest on Valley to the Mountain. Includes consent and media-release acknowledgements." />
+  <meta name="theme-color" content="#0b0c10" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <img class="brand__mark" src="assets/logo.svg" alt="" />
+          <span class="brand__name">Valley to the Mountain<small>Bobby Samai · Willamette Valley</small></span>
+        </a>
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="story.html">The Story</a></li>
+          <li><a href="show.html">The Show</a></li>
+          <li><a href="episodes.html">Watch</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav__cta"><a class="btn btn--gold" href="apply.html">Apply for mentorship</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <p class="eyebrow">Apply for mentorship</p>
+        <h1>Request a mentor for your son</h1>
+        <p>This form must be completed by a parent or legal guardian. Mentorship is always free — there is never a cost to participate.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="wrap" style="max-width:840px;">
+
+        <div class="notice reveal" style="margin-bottom:28px;">
+          <strong>For parents &amp; guardians.</strong> Your young man’s safety and dignity come first — always. This application starts a conversation; nothing is filmed until you’ve reviewed everything, had your questions answered, and given written consent. You may withdraw at any time.
+        </div>
+
+        <!-- SUCCESS STATE -->
+        <div class="form-success reveal" data-form-success role="status">
+          <h2 class="h-md">Thank you — your application is in. 🙏</h2>
+          <p class="muted" style="margin:0;">Bobby will personally review it and reach out to you using the contact details you provided. Keep an eye on your email and phone.</p>
+          <p style="margin-top:18px;"><a class="btn btn--ghost" href="index.html">Back to home</a></p>
+        </div>
+
+        <!-- FORM -->
+        <form class="form reveal" data-app-form data-demo="true" name="show-application" method="POST" novalidate>
+          <!-- When using Netlify Forms, uncomment netlify attributes in README and this honeypot -->
+          <p hidden><label>Don’t fill this out: <input name="bot-field" /></label></p>
+
+          <!-- GUARDIAN -->
+          <fieldset class="fieldset">
+            <legend>1 · Parent / Guardian</legend>
+            <p class="fieldset__hint">The adult completing and responsible for this application.</p>
+            <div class="row">
+              <div class="field">
+                <label for="g-name">Full name <span class="req">*</span></label>
+                <input id="g-name" name="guardian_name" type="text" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="g-rel">Relationship to youth <span class="req">*</span></label>
+                <input id="g-rel" name="guardian_relationship" type="text" placeholder="Parent, guardian, etc." required />
+              </div>
+            </div>
+            <div class="row">
+              <div class="field">
+                <label for="g-email">Email <span class="req">*</span></label>
+                <input id="g-email" name="guardian_email" type="email" autocomplete="email" required />
+              </div>
+              <div class="field">
+                <label for="g-phone">Phone <span class="req">*</span></label>
+                <input id="g-phone" name="guardian_phone" type="tel" autocomplete="tel" required />
+              </div>
+            </div>
+            <div class="field">
+              <label for="g-city">City &amp; ZIP <span class="req">*</span></label>
+              <input id="g-city" name="guardian_location" type="text" placeholder="e.g. Eugene, OR 97401" required />
+            </div>
+          </fieldset>
+
+          <!-- YOUTH -->
+          <fieldset class="fieldset">
+            <legend>2 · The young man</legend>
+            <p class="fieldset__hint">Ages 10–17, located along the I-5 corridor from Eugene to Salem (and ~25 miles east or west).</p>
+            <div class="row">
+              <div class="field">
+                <label for="y-name">Youth’s first name <span class="req">*</span></label>
+                <input id="y-name" name="youth_first_name" type="text" required />
+              </div>
+              <div class="field">
+                <label for="y-age">Age <span class="req">*</span></label>
+                <input id="y-age" name="youth_age" type="number" min="10" max="17" required />
+              </div>
+            </div>
+            <div class="field">
+              <label for="y-area">Where do you live / nearest town? <span class="req">*</span></label>
+              <input id="y-area" name="youth_area" type="text" placeholder="Helps confirm you’re in the service area" required />
+            </div>
+            <div class="field">
+              <label for="y-about">Tell us a little about him <span class="req">*</span></label>
+              <textarea id="y-about" name="youth_about" placeholder="What’s he like? What’s going on in his life? Why might a mentor be good for him right now?" required></textarea>
+            </div>
+            <div class="field">
+              <label for="y-hope">What do you hope he gets out of it?</label>
+              <textarea id="y-hope" name="youth_hopes" placeholder="Optional — anything you’d love for Bobby to know or focus on."></textarea>
+            </div>
+          </fieldset>
+
+          <!-- CONSENT -->
+          <fieldset class="fieldset">
+            <legend>3 · Consent &amp; media release</legend>
+            <p class="fieldset__hint">Please read each item and check to acknowledge. These confirm your understanding; a full release form will be provided to sign before any filming.</p>
+
+            <div class="consent">
+              <input id="c-guardian" name="consent_guardian" type="checkbox" required />
+              <label for="c-guardian"><strong>I am the parent or legal guardian</strong> of the young man named above and am authorized to submit this application on his behalf.</label>
+            </div>
+            <div class="consent">
+              <input id="c-ride" name="consent_ride" type="checkbox" required />
+              <label for="c-ride"><strong>I consent to him participating</strong> in a supervised 1–2 hour mentorship session with Bobby Samai (which may include a drive), and understand I may be present at the meeting and may ask questions at any time.</label>
+            </div>
+            <div class="consent">
+              <input id="c-media" name="consent_media" type="checkbox" required />
+              <label for="c-media"><strong>I understand the ride may be recorded</strong> for the “Valley to the Mountain” YouTube show, and that footage will be edited with privacy protections. I will have the opportunity to review and approve before anything is published. <span class="placeholder-tag">Full media release to follow</span></label>
+            </div>
+            <div class="consent">
+              <input id="c-privacy" name="consent_privacy" type="checkbox" required />
+              <label for="c-privacy"><strong>I understand my information is private</strong> and used only to coordinate participation, and that I may withdraw consent at any time before publication.</label>
+            </div>
+          </fieldset>
+
+          <!-- SIGNATURE -->
+          <fieldset class="fieldset" style="margin-bottom:18px;">
+            <legend>4 · Acknowledgement</legend>
+            <div class="row">
+              <div class="field">
+                <label for="sig">Type your full name as signature <span class="req">*</span></label>
+                <input id="sig" name="guardian_signature" type="text" placeholder="Your full legal name" required />
+              </div>
+              <div class="field">
+                <label for="sig-date">Date <span class="req">*</span></label>
+                <input id="sig-date" name="signature_date" type="date" required />
+              </div>
+            </div>
+          </fieldset>
+
+          <button class="btn btn--gold btn--block btn--lg" type="submit">Submit application</button>
+          <p class="form__note">By submitting, you confirm the information above is accurate. This form is a first step, not a binding agreement — Bobby will follow up personally before anything is scheduled.</p>
+        </form>
+
+        <div class="notice notice--gold reveal" style="margin-top:24px;">
+          <strong>Heads up for the site owner:</strong> this form currently shows a friendly confirmation but does <em>not</em> yet deliver submissions anywhere. Connect it to a form service (Netlify Forms or Formspree) to receive applications by email — step-by-step instructions are in the project <span class="placeholder-tag">README.md</span>. Before going live with minors, have an attorney review the consent and media-release language.
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <img class="brand__mark" src="assets/logo.svg" alt="" />
+            <span class="brand" style="gap:0;">Valley to the Mountain</span>
+          </div>
+          <p class="muted" style="max-width:42ch;">A faith-driven mentorship show with Bobby Samai, serving young men along Oregon's I-5 corridor from Eugene to Salem and 25 miles east and west.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="story.html">The Story</a></li>
+            <li><a href="show.html">The Show</a></li>
+            <li><a href="episodes.html">Watch</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#" data-social="youtube">YouTube <span class="placeholder-tag">add link</span></a></li>
+            <li><a href="#" data-social="instagram">Instagram <span class="placeholder-tag">add link</span></a></li>
+            <li><a href="mailto:bsamaix@gmail.com">Email Bobby</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Valley to the Mountain · Willamette Valley, Oregon</span>
+        <span>Mentoring young men · For His glory</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
